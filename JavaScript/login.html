@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <input type="text" id="email"> <button onclick="checkEmail()">submit</button>
+    <script>
+
+        function checkEmail() {
+            var email = document.getElementById("email").value;
+            email = email.trim();
+            email = email.toLowercase();
+            if (!email.includes("@gmail.com")) {
+                email = email.concat("@gmail.com");
+            }
+            document.getElementById("email").value = email;
+        }
+    </script>
+
+</body>
+
+<!-- </html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input type="text" id="email"> <button onclick="checkEmail()">Submit</button>
+    <script>
+
+        function checkEmail() {
+            var email = document.getElementById("email").value;
+            email = email.trim();
+            email = email.toLowerCase();
+            if (!email.includes("@gmail.com")) {
+                email = email.concat("@gmail.com");
+            }
+            document.getElementById("email").value = email;
+        }
+    </script>
+
+</body>
+
+</html> -->
